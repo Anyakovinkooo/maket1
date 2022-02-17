@@ -428,17 +428,14 @@
   }
 }
 .header__menu-icon {
-  width: 18px;
-  height: 13px;
-  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
-  display: inline-block;
-}
-.header .logo__description {
   display: none;
 }
 @media screen and (min-width: 1400px) {
-  .header .logo__description {
-    display: block;
+  .header__menu-icon {
+    width: 18px;
+    height: 13px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
+    display: inline-block;
   }
 }
 
@@ -489,21 +486,30 @@
     margin-right: 15px;
   }
 }
-.logo__image__description {
-  font-size: 18px;
-  line-height: 25px;
-  color: #2b292d;
-  opacity: 0.6;
-}
-.logo__image__name {
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 700;
-}
 .logo__image__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.logo__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #2b292d;
+}
+
+.logo__description {
+  display: none;
+}
+@media screen and (min-width: 1400px) {
+  .logo__description {
+    display: block;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2b292d;
+    opacity: 0.6;
+  }
 }
 
 .top-section {
