@@ -103,6 +103,10 @@
   line-height: 25px;
   color: #2b292d;
   margin-top: 14px;
+
+  @include for-large-up {
+    margin-top: 0;
+  }
 }
 .logo__description {
   display: none;

@@ -499,6 +499,11 @@
   color: #2b292d;
   margin-top: 14px;
 }
+@media screen and (min-width: 1400px) {
+  .logo__name {
+    margin-top: 0;
+  }
+}
 
 .logo__description {
   display: none;
